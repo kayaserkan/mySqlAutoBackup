@@ -1,0 +1,57 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\kayas\\source\\repos\\MySqlYedekAlma\\MySqlYedekAlma\\MySqlYedekAlma.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\kayas\\source\\repos\\MySqlYedekAlma\\MySqlYedekAlma\\MySqlYedekAlma.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\kayas\\source\\repos\\MySqlYedekAlma\\MySqlYedekAlma\\MySqlYedekAlma.csproj",
+        "projectName": "MySqlYedekAlma",
+        "projectPath": "C:\\Users\\kayas\\source\\repos\\MySqlYedekAlma\\MySqlYedekAlma\\MySqlYedekAlma.csproj",
+        "packagesPath": "C:\\Users\\kayas\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\kayas\\source\\repos\\MySqlYedekAlma\\MySqlYedekAlma\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "configFilePaths": [
+          "C:\\Users\\kayas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net452"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://packagesource": {}
+        },
+        "frameworks": {
+          "net452": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net452": {
+          "dependencies": {
+            "MySqlBackup.NET": {
+              "target": "Package",
+              "version": "[2.3.1, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}

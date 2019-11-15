@@ -1,0 +1,16 @@
+C:\Users\kayas\source\repos\MySqlYedekAlma\MySqlYedekAlma\bin\Debug\MySqlYedekAlma.exe.config
+C:\Users\kayas\source\repos\MySqlYedekAlma\MySqlYedekAlma\bin\Debug\MySqlYedekAlma.exe
+C:\Users\kayas\source\repos\MySqlYedekAlma\MySqlYedekAlma\bin\Debug\MySqlYedekAlma.pdb
+C:\Users\kayas\source\repos\MySqlYedekAlma\MySqlYedekAlma\obj\Debug\MySqlYedekAlma.csprojAssemblyReference.cache
+C:\Users\kayas\source\repos\MySqlYedekAlma\MySqlYedekAlma\obj\Debug\MySqlYedekAlma.Properties.Resources.resources
+C:\Users\kayas\source\repos\MySqlYedekAlma\MySqlYedekAlma\obj\Debug\MySqlYedekAlma.csproj.GenerateResource.cache
+C:\Users\kayas\source\repos\MySqlYedekAlma\MySqlYedekAlma\obj\Debug\MySqlYedekAlma.csproj.CoreCompileInputs.cache
+C:\Users\kayas\source\repos\MySqlYedekAlma\MySqlYedekAlma\obj\Debug\MySqlYedekAlma.exe
+C:\Users\kayas\source\repos\MySqlYedekAlma\MySqlYedekAlma\obj\Debug\MySqlYedekAlma.pdb
+C:\Users\kayas\source\repos\MySqlYedekAlma\MySqlYedekAlma\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\kayas\source\repos\MySqlYedekAlma\MySqlYedekAlma\bin\Debug\Google.Protobuf.dll
+C:\Users\kayas\source\repos\MySqlYedekAlma\MySqlYedekAlma\bin\Debug\MySql.Data.dll
+C:\Users\kayas\source\repos\MySqlYedekAlma\MySqlYedekAlma\bin\Debug\MySqlBackup.dll
+C:\Users\kayas\source\repos\MySqlYedekAlma\MySqlYedekAlma\bin\Debug\Renci.SshNet.dll
+C:\Users\kayas\source\repos\MySqlYedekAlma\MySqlYedekAlma\obj\Debug\MySqlYedekAlma.Form1.resources
+C:\Users\kayas\source\repos\MySqlYedekAlma\MySqlYedekAlma\obj\Debug\MySqlYedekAlma.csproj.CopyComplete
