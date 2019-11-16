@@ -26,15 +26,22 @@ namespace MySqlYedekAlma
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            dbAdi = Properties.Settings.Default.dbAdi;
-            kullaniciAdi = Properties.Settings.Default.kullaniciAdi;
-            dbSifre = Properties.Settings.Default.sifre;
-            dbServer = Properties.Settings.Default.sunucuAdresi;
-            dosyaYolu = Properties.Settings.Default.dosyaYolu;
-            checkBox1.Checked = Properties.Settings.Default.duzenliKayit;
+            try
+            {
+                dbAdi = Properties.Settings.Default.dbAdi;
+                kullaniciAdi = Properties.Settings.Default.kullaniciAdi;
+                dbSifre = Properties.Settings.Default.sifre;
+                dbServer = Properties.Settings.Default.sunucuAdresi;
+                dosyaYolu = Properties.Settings.Default.dosyaYolu;
+                checkBox1.Checked = Properties.Settings.Default.duzenliKayit;
 
-            numericUpDownSaat.Value = Properties.Settings.Default.saat;
-            numericUpDownDakika.Value = Properties.Settings.Default.dakika;
+                numericUpDownSaat.Value = Properties.Settings.Default.saat;
+                numericUpDownDakika.Value = Properties.Settings.Default.dakika;
+            }
+            catch (Exception ec)
+            {
+                MessageBox.Show(ec.Message);
+            }
         }
 
         private void Timer1_Tick(object sender, EventArgs e)
@@ -60,30 +67,36 @@ namespace MySqlYedekAlma
 
         private void BtnBirSeferlikKayit_Click(object sender, EventArgs e)
         {
-            dtn = DateTime.Now;
-            string str = dtn.ToString("dd-MM-yyyy");
-            //string constring = "server=localhost;user=root;pwd=admin;database=paflex;";
-
-            string constring = "server=" + tbSunucu.Text + "; user=" + tbKullaniciAdi.Text + "; pwd=" + tbSifre.Text + ";database=" + tbDbAdi.Text + ";";
-            string file = "D:\\densi" + str + ".sql";
-            using (MySqlConnection conn = new MySqlConnection(constring))
+            try
             {
-                using (MySqlCommand cmd = new MySqlCommand())
+                dtn = DateTime.Now;
+                string str = dtn.ToString("dd-MM-yyyy");
+                //string constring = "server=localhost;user=root;pwd=admin;database=paflex;";
+
+                string constring = "server=" + tbSunucu.Text + "; user=" + tbKullaniciAdi.Text + "; pwd=" + tbSifre.Text + ";database=" + tbDbAdi.Text + ";";
+                string file = "D:\\densi" + str + ".sql";
+                using (MySqlConnection conn = new MySqlConnection(constring))
                 {
-                    using (MySqlBackup mb = new MySqlBackup(cmd))
+                    using (MySqlCommand cmd = new MySqlCommand())
                     {
-                        cmd.Connection = conn;
-                        conn.Open();
-                        mb.ExportInfo.AddCreateDatabase = true;
-                        mb.ExportInfo.ExportTableStructure = true;
-                        mb.ExportInfo.ExportRows = true;
-                        mb.ExportToFile(file);
+                        using (MySqlBackup mb = new MySqlBackup(cmd))
+                        {
+                            cmd.Connection = conn;
+                            conn.Open();
+                            mb.ExportInfo.AddCreateDatabase = true;
+                            mb.ExportInfo.ExportTableStructure = true;
+                            mb.ExportInfo.ExportRows = true;
+                            mb.ExportToFile(file);
+                        }
                     }
                 }
             }
+            catch(Exception ec)
+            {
+                MessageBox.Show(ec.Message);
+            }
         }
-
-       
+               
         private void Button3_Click(object sender, EventArgs e)
         {
             FolderBrowserDialog fbd = new FolderBrowserDialog();
@@ -96,25 +109,32 @@ namespace MySqlYedekAlma
 
         public void DuzenliKayit() // saat kontrolü de yapılacak
         {
-            dtn = DateTime.Now;
-            string str = dtn.ToString("dd-MM-yyyy");
-
-            string constring = string.Format(@"server={0}; user={1}; pwd={2}; database={3};", dbServer, kullaniciAdi, dbSifre, dbAdi);
-            string file = Properties.Settings.Default.dosyaYolu +"\\backup" + str + ".sql";
-            using (MySqlConnection conn = new MySqlConnection(constring))
+            try
             {
-                using (MySqlCommand cmd = new MySqlCommand())
+                dtn = DateTime.Now;
+                string str = dtn.ToString("dd-MM-yyyy");
+
+                string constring = string.Format(@"server={0}; user={1}; pwd={2}; database={3};", dbServer, kullaniciAdi, dbSifre, dbAdi);
+                string file = Properties.Settings.Default.dosyaYolu + "\\backup" + str + ".sql";
+                using (MySqlConnection conn = new MySqlConnection(constring))
                 {
-                    using (MySqlBackup mb = new MySqlBackup(cmd))
+                    using (MySqlCommand cmd = new MySqlCommand())
                     {
-                        cmd.Connection = conn;
-                        conn.Open();
-                        mb.ExportInfo.AddCreateDatabase = true;
-                        mb.ExportInfo.ExportTableStructure = true;
-                        mb.ExportInfo.ExportRows = true;
-                        mb.ExportToFile(file);
+                        using (MySqlBackup mb = new MySqlBackup(cmd))
+                        {
+                            cmd.Connection = conn;
+                            conn.Open();
+                            mb.ExportInfo.AddCreateDatabase = true;
+                            mb.ExportInfo.ExportTableStructure = true;
+                            mb.ExportInfo.ExportRows = true;
+                            mb.ExportToFile(file);
+                        }
                     }
                 }
+            }
+            catch (Exception ec)
+            {
+                MessageBox.Show(ec.Message);
             }
         }
     }
