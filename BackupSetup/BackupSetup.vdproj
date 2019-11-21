@@ -28,6 +28,12 @@
         "Entry"
         {
         "MsmKey" = "8:_629438773C2AAD50059A1CD36735115B"
+        "OwnerKey" = "8:_5A03710E36EC48E3B8DEE5AEEB344D31"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_629438773C2AAD50059A1CD36735115B"
         "OwnerKey" = "8:_9A1FCAC09A6945B2BEF5BE9010414E1A"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -39,8 +45,8 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_629438773C2AAD50059A1CD36735115B"
-        "OwnerKey" = "8:_5A03710E36EC48E3B8DEE5AEEB344D31"
+        "MsmKey" = "8:_6545A7AA2BBE4A85814C0C860ED985E6"
+        "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -100,13 +106,13 @@
         "Entry"
         {
         "MsmKey" = "8:_9B339D23B5BDAB4AB40F04CBC96B2EDA"
-        "OwnerKey" = "8:_689456D88C29408CBE1A0C239E20F4A5"
+        "OwnerKey" = "8:_629438773C2AAD50059A1CD36735115B"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_9B339D23B5BDAB4AB40F04CBC96B2EDA"
-        "OwnerKey" = "8:_629438773C2AAD50059A1CD36735115B"
+        "OwnerKey" = "8:_689456D88C29408CBE1A0C239E20F4A5"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -136,31 +142,7 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_5A03710E36EC48E3B8DEE5AEEB344D31"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_90A0F268E0E7F10FFE63C82C7E7C5E8F"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_9A1FCAC09A6945B2BEF5BE9010414E1A"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_629438773C2AAD50059A1CD36735115B"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_689456D88C29408CBE1A0C239E20F4A5"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -178,13 +160,37 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_9B339D23B5BDAB4AB40F04CBC96B2EDA"
+        "OwnerKey" = "8:_735CF937B0E94FD1BD6C8ACE1252FC9A"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_735CF937B0E94FD1BD6C8ACE1252FC9A"
+        "OwnerKey" = "8:_689456D88C29408CBE1A0C239E20F4A5"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_5A03710E36EC48E3B8DEE5AEEB344D31"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_90A0F268E0E7F10FFE63C82C7E7C5E8F"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_629438773C2AAD50059A1CD36735115B"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_9B339D23B5BDAB4AB40F04CBC96B2EDA"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -205,6 +211,22 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.6.1"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.6.1 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.6.1"
+                    }
+                }
+            }
         }
         "Release"
         {
@@ -221,6 +243,14 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+            }
         }
     }
     "Deployable"
@@ -330,6 +360,26 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_6545A7AA2BBE4A85814C0C860ED985E6"
+            {
+            "SourcePath" = "8:..\\MySqlYedekAlma\\icons8_mysql.ico"
+            "TargetName" = "8:icons8_mysql.ico"
+            "Tag" = "8:"
+            "Folder" = "8:_DED9FB1BD1384252BFCA914EF6A6743B"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_65C9C5AB204945FB96FFCDE2BF873EC2"
@@ -688,7 +738,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:BackupSetup"
         "ProductCode" = "8:{710CA843-6005-43B2-ACD7-5A6DD8D8294C}"
-        "PackageCode" = "8:{269A959B-9C68-430B-A480-1886832FBA13}"
+        "PackageCode" = "8:{ABBEE8B6-E783-4F8F-B882-660D21D7F17E}"
         "UpgradeCode" = "8:{F906750C-BBAC-4343-9EC3-4448A087835B}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
@@ -819,7 +869,7 @@
             "Target" = "8:_5A03710E36EC48E3B8DEE5AEEB344D31"
             "Folder" = "8:_DED9FB1BD1384252BFCA914EF6A6743B"
             "WorkingFolder" = "8:_A1FBE90D9B5144119C924166852FA852"
-            "Icon" = "8:"
+            "Icon" = "8:_6545A7AA2BBE4A85814C0C860ED985E6"
             "Feature" = "8:"
             }
         }

@@ -1,7 +1,6 @@
 C:\Users\kayas\source\repos\MySqlYedekAlma\MySqlYedekAlma\bin\Debug\MySqlYedekAlma.exe.config
 C:\Users\kayas\source\repos\MySqlYedekAlma\MySqlYedekAlma\bin\Debug\MySqlYedekAlma.exe
 C:\Users\kayas\source\repos\MySqlYedekAlma\MySqlYedekAlma\bin\Debug\MySqlYedekAlma.pdb
-C:\Users\kayas\source\repos\MySqlYedekAlma\MySqlYedekAlma\obj\Debug\MySqlYedekAlma.csprojAssemblyReference.cache
 C:\Users\kayas\source\repos\MySqlYedekAlma\MySqlYedekAlma\obj\Debug\MySqlYedekAlma.Properties.Resources.resources
 C:\Users\kayas\source\repos\MySqlYedekAlma\MySqlYedekAlma\obj\Debug\MySqlYedekAlma.csproj.GenerateResource.cache
 C:\Users\kayas\source\repos\MySqlYedekAlma\MySqlYedekAlma\obj\Debug\MySqlYedekAlma.csproj.CoreCompileInputs.cache
