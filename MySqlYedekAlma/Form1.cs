@@ -50,8 +50,7 @@ namespace MySqlYedekAlma
             if (checkBox1.Checked == true && dt.Hour == numericUpDownSaat.Value && dt.Minute == numericUpDownDakika.Value)
             {
                 DuzenliKayit();
-            }
-        }
+            }       }
 
         private void Button1_Click(object sender, EventArgs e)
         {

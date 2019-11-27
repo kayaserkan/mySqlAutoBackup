@@ -46,6 +46,7 @@
             this.numericUpDownSaat = new System.Windows.Forms.NumericUpDown();
             this.numericUpDownDakika = new System.Windows.Forms.NumericUpDown();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSaat)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownDakika)).BeginInit();
             this.SuspendLayout();
@@ -53,9 +54,9 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button1.Location = new System.Drawing.Point(470, 153);
+            this.button1.Location = new System.Drawing.Point(370, 274);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(247, 34);
+            this.button1.Size = new System.Drawing.Size(347, 34);
             this.button1.TabIndex = 0;
             this.button1.Text = "BİLGİLERİ KAYDET";
             this.button1.UseVisualStyleBackColor = true;
@@ -137,7 +138,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label5.Location = new System.Drawing.Point(18, 200);
+            this.label5.Location = new System.Drawing.Point(18, 207);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(133, 20);
             this.label5.TabIndex = 9;
@@ -146,9 +147,9 @@
             // btnBirSeferlikKayit
             // 
             this.btnBirSeferlikKayit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnBirSeferlikKayit.Location = new System.Drawing.Point(470, 193);
+            this.btnBirSeferlikKayit.Location = new System.Drawing.Point(17, 274);
             this.btnBirSeferlikKayit.Name = "btnBirSeferlikKayit";
-            this.btnBirSeferlikKayit.Size = new System.Drawing.Size(247, 34);
+            this.btnBirSeferlikKayit.Size = new System.Drawing.Size(347, 34);
             this.btnBirSeferlikKayit.TabIndex = 12;
             this.btnBirSeferlikKayit.Text = "BİR SEFERLİK BACKUP";
             this.btnBirSeferlikKayit.UseVisualStyleBackColor = true;
@@ -179,7 +180,7 @@
             // 
             this.checkBox1.AutoSize = true;
             this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.checkBox1.Location = new System.Drawing.Point(316, 200);
+            this.checkBox1.Location = new System.Drawing.Point(22, 241);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(130, 24);
             this.checkBox1.TabIndex = 15;
@@ -189,7 +190,7 @@
             // numericUpDownSaat
             // 
             this.numericUpDownSaat.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.numericUpDownSaat.Location = new System.Drawing.Point(184, 198);
+            this.numericUpDownSaat.Location = new System.Drawing.Point(258, 205);
             this.numericUpDownSaat.Maximum = new decimal(new int[] {
             23,
             0,
@@ -202,7 +203,7 @@
             // numericUpDownDakika
             // 
             this.numericUpDownDakika.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.numericUpDownDakika.Location = new System.Drawing.Point(242, 198);
+            this.numericUpDownDakika.Location = new System.Drawing.Point(316, 205);
             this.numericUpDownDakika.Maximum = new decimal(new int[] {
             59,
             0,
@@ -218,11 +219,17 @@
             this.timer1.Interval = 55000;
             this.timer1.Tick += new System.EventHandler(this.Timer1_Tick);
             // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(729, 248);
+            this.ClientSize = new System.Drawing.Size(743, 320);
             this.Controls.Add(this.numericUpDownDakika);
             this.Controls.Add(this.numericUpDownSaat);
             this.Controls.Add(this.checkBox1);
@@ -241,6 +248,7 @@
             this.Controls.Add(this.button1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Form1";
+            this.ShowInTaskbar = false;
             this.Text = "MySql Oto Backup";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSaat)).EndInit();
@@ -269,6 +277,7 @@
         private System.Windows.Forms.NumericUpDown numericUpDownSaat;
         private System.Windows.Forms.NumericUpDown numericUpDownDakika;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
     }
 }
 

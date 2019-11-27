@@ -118,5 +118,17 @@ namespace MySqlYedekAlma.Properties {
                 this["duzenliKayit"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string klasorYolu {
+            get {
+                return ((string)(this["klasorYolu"]));
+            }
+            set {
+                this["klasorYolu"] = value;
+            }
+        }
     }
 }

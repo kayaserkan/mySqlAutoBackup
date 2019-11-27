@@ -4,9 +4,9 @@
 "ProjectType" = "8:{978C614F-708E-4E1A-B201-565925725DBA}"
 "IsWebType" = "8:FALSE"
 "ProjectName" = "8:BackupSetup"
-"LanguageId" = "3:1033"
-"CodePage" = "3:1252"
-"UILanguageId" = "3:1033"
+"LanguageId" = "3:1055"
+"CodePage" = "3:1254"
+"UILanguageId" = "3:1055"
 "SccProjectName" = "8:"
 "SccLocalPath" = "8:"
 "SccAuxPath" = "8:"
@@ -34,13 +34,13 @@
         "Entry"
         {
         "MsmKey" = "8:_629438773C2AAD50059A1CD36735115B"
-        "OwnerKey" = "8:_9A1FCAC09A6945B2BEF5BE9010414E1A"
+        "OwnerKey" = "8:_90A0F268E0E7F10FFE63C82C7E7C5E8F"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_629438773C2AAD50059A1CD36735115B"
-        "OwnerKey" = "8:_90A0F268E0E7F10FFE63C82C7E7C5E8F"
+        "OwnerKey" = "8:_9A1FCAC09A6945B2BEF5BE9010414E1A"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -136,49 +136,7 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_FF84CC43842E41ECAF6A58D7C01B719B"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_9A1FCAC09A6945B2BEF5BE9010414E1A"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_8163BCF861592650FF635DAFBF81D461"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_773E263F105FCB5A942F9E3AD31FD2C5"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_735CF937B0E94FD1BD6C8ACE1252FC9A"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_689456D88C29408CBE1A0C239E20F4A5"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_5A03710E36EC48E3B8DEE5AEEB344D31"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_90A0F268E0E7F10FFE63C82C7E7C5E8F"
+        "OwnerKey" = "8:_9B339D23B5BDAB4AB40F04CBC96B2EDA"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -190,7 +148,49 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_9B339D23B5BDAB4AB40F04CBC96B2EDA"
+        "OwnerKey" = "8:_90A0F268E0E7F10FFE63C82C7E7C5E8F"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_5A03710E36EC48E3B8DEE5AEEB344D31"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_689456D88C29408CBE1A0C239E20F4A5"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_735CF937B0E94FD1BD6C8ACE1252FC9A"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_773E263F105FCB5A942F9E3AD31FD2C5"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_8163BCF861592650FF635DAFBF81D461"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_9A1FCAC09A6945B2BEF5BE9010414E1A"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_FF84CC43842E41ECAF6A58D7C01B719B"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -250,6 +250,14 @@
             "PrerequisitesLocation" = "2:1"
             "Url" = "8:"
             "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.6.1"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.6.1 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.6.1"
+                    }
+                }
             }
         }
     }
@@ -338,11 +346,6 @@
             "AssemblyAsmDisplayName" = "8:MySql.Data, Version=8.0.17.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_629438773C2AAD50059A1CD36735115B"
-                    {
-                    "Name" = "8:MySql.Data.DLL"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:MySql.Data.DLL"
             "TargetName" = "8:"
@@ -544,11 +547,6 @@
             "AssemblyAsmDisplayName" = "8:MySqlBackup, Version=2.3.1.0, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_90A0F268E0E7F10FFE63C82C7E7C5E8F"
-                    {
-                    "Name" = "8:MySqlBackup.DLL"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:MySqlBackup.DLL"
             "TargetName" = "8:"
@@ -606,11 +604,6 @@
             "AssemblyAsmDisplayName" = "8:Renci.SshNet, Version=2016.1.0.0, Culture=neutral, PublicKeyToken=1cee9f8bde3db106, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_9B339D23B5BDAB4AB40F04CBC96B2EDA"
-                    {
-                    "Name" = "8:Renci.SshNet.DLL"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:Renci.SshNet.DLL"
             "TargetName" = "8:"
@@ -730,7 +723,7 @@
         }
         "MsiBootstrapper"
         {
-        "LangId" = "3:1033"
+        "LangId" = "3:1055"
         "RequiresElevation" = "11:FALSE"
         }
         "Product"
