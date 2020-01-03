@@ -3,7 +3,6 @@ C:\Users\kayas\source\repos\MySqlYedekAlma\MySqlYedekAlma\bin\Debug\MySqlYedekAl
 C:\Users\kayas\source\repos\MySqlYedekAlma\MySqlYedekAlma\bin\Debug\MySqlYedekAlma.pdb
 C:\Users\kayas\source\repos\MySqlYedekAlma\MySqlYedekAlma\obj\Debug\MySqlYedekAlma.Properties.Resources.resources
 C:\Users\kayas\source\repos\MySqlYedekAlma\MySqlYedekAlma\obj\Debug\MySqlYedekAlma.csproj.GenerateResource.cache
-C:\Users\kayas\source\repos\MySqlYedekAlma\MySqlYedekAlma\obj\Debug\MySqlYedekAlma.csproj.CoreCompileInputs.cache
 C:\Users\kayas\source\repos\MySqlYedekAlma\MySqlYedekAlma\obj\Debug\MySqlYedekAlma.exe
 C:\Users\kayas\source\repos\MySqlYedekAlma\MySqlYedekAlma\obj\Debug\MySqlYedekAlma.pdb
 C:\Users\kayas\source\repos\MySqlYedekAlma\MySqlYedekAlma\bin\Debug\BouncyCastle.Crypto.dll

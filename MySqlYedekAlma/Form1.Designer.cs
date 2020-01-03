@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.button1 = new System.Windows.Forms.Button();
             this.tbSunucu = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -47,6 +48,8 @@
             this.numericUpDownDakika = new System.Windows.Forms.NumericUpDown();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.cbDatabaseIsimleri = new System.Windows.Forms.ComboBox();
+            this.label7 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSaat)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownDakika)).BeginInit();
             this.SuspendLayout();
@@ -54,9 +57,9 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button1.Location = new System.Drawing.Point(370, 274);
+            this.button1.Location = new System.Drawing.Point(316, 274);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(347, 34);
+            this.button1.Size = new System.Drawing.Size(277, 34);
             this.button1.TabIndex = 0;
             this.button1.Text = "BİLGİLERİ KAYDET";
             this.button1.UseVisualStyleBackColor = true;
@@ -67,7 +70,7 @@
             this.tbSunucu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.tbSunucu.Location = new System.Drawing.Point(262, 15);
             this.tbSunucu.Name = "tbSunucu";
-            this.tbSunucu.Size = new System.Drawing.Size(455, 27);
+            this.tbSunucu.Size = new System.Drawing.Size(331, 27);
             this.tbSunucu.TabIndex = 1;
             // 
             // label1
@@ -95,7 +98,7 @@
             this.tbDbAdi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.tbDbAdi.Location = new System.Drawing.Point(262, 49);
             this.tbDbAdi.Name = "tbDbAdi";
-            this.tbDbAdi.Size = new System.Drawing.Size(455, 27);
+            this.tbDbAdi.Size = new System.Drawing.Size(331, 27);
             this.tbDbAdi.TabIndex = 3;
             // 
             // label3
@@ -113,7 +116,7 @@
             this.tbSifre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.tbSifre.Location = new System.Drawing.Point(262, 117);
             this.tbSifre.Name = "tbSifre";
-            this.tbSifre.Size = new System.Drawing.Size(455, 27);
+            this.tbSifre.Size = new System.Drawing.Size(331, 27);
             this.tbSifre.TabIndex = 7;
             // 
             // label4
@@ -131,7 +134,7 @@
             this.tbKullaniciAdi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.tbKullaniciAdi.Location = new System.Drawing.Point(262, 83);
             this.tbKullaniciAdi.Name = "tbKullaniciAdi";
-            this.tbKullaniciAdi.Size = new System.Drawing.Size(455, 27);
+            this.tbKullaniciAdi.Size = new System.Drawing.Size(331, 27);
             this.tbKullaniciAdi.TabIndex = 5;
             // 
             // label5
@@ -149,7 +152,7 @@
             this.btnBirSeferlikKayit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnBirSeferlikKayit.Location = new System.Drawing.Point(17, 274);
             this.btnBirSeferlikKayit.Name = "btnBirSeferlikKayit";
-            this.btnBirSeferlikKayit.Size = new System.Drawing.Size(347, 34);
+            this.btnBirSeferlikKayit.Size = new System.Drawing.Size(277, 34);
             this.btnBirSeferlikKayit.TabIndex = 12;
             this.btnBirSeferlikKayit.Text = "BİR SEFERLİK BACKUP";
             this.btnBirSeferlikKayit.UseVisualStyleBackColor = true;
@@ -225,11 +228,31 @@
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
+            // cbDatabaseIsimleri
+            // 
+            this.cbDatabaseIsimleri.FormattingEnabled = true;
+            this.cbDatabaseIsimleri.Location = new System.Drawing.Point(373, 208);
+            this.cbDatabaseIsimleri.Name = "cbDatabaseIsimleri";
+            this.cbDatabaseIsimleri.Size = new System.Drawing.Size(220, 24);
+            this.cbDatabaseIsimleri.TabIndex = 18;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label7.Location = new System.Drawing.Point(384, 187);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(185, 18);
+            this.label7.TabIndex = 19;
+            this.label7.Text = "Yedeklenecek DataBaseler";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(743, 320);
+            this.ClientSize = new System.Drawing.Size(614, 319);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.cbDatabaseIsimleri);
             this.Controls.Add(this.numericUpDownDakika);
             this.Controls.Add(this.numericUpDownSaat);
             this.Controls.Add(this.checkBox1);
@@ -247,6 +270,7 @@
             this.Controls.Add(this.tbSunucu);
             this.Controls.Add(this.button1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.ShowInTaskbar = false;
             this.Text = "MySql Oto Backup";
@@ -278,6 +302,8 @@
         private System.Windows.Forms.NumericUpDown numericUpDownDakika;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.ComboBox cbDatabaseIsimleri;
+        private System.Windows.Forms.Label label7;
     }
 }
 

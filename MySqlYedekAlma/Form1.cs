@@ -26,8 +26,25 @@ namespace MySqlYedekAlma
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            cbDatabaseIsimleri.Items.Clear();
+            MySqlConnection con = new MySqlConnection("Server=127.0.0.1; Database=dbisimleri; Uid=root; Pwd=admin;");
+            con.Open();
+            MySqlCommand cmd = new MySqlCommand("SELECT * FROM dbisimleri", con);
+            MySqlDataReader dr = cmd.ExecuteReader();
+
+            while (dr.Read())
+            {
+                cbDatabaseIsimleri.Items.Add(dr["dbisimleri"]);
+            }
+            con.Close();
+
             try
             {
+                tbSunucu.Text = Properties.Settings.Default.sunucuAdresi;
+                tbDbAdi.Text = Properties.Settings.Default.dbAdi;
+                tbKullaniciAdi.Text = Properties.Settings.Default.kullaniciAdi;
+                tbSifre.Text = Properties.Settings.Default.sifre;
+
                 dbAdi = Properties.Settings.Default.dbAdi;
                 kullaniciAdi = Properties.Settings.Default.kullaniciAdi;
                 dbSifre = Properties.Settings.Default.sifre;
@@ -50,7 +67,13 @@ namespace MySqlYedekAlma
             if (checkBox1.Checked == true && dt.Hour == numericUpDownSaat.Value && dt.Minute == numericUpDownDakika.Value)
             {
                 DuzenliKayit();
-            }       }
+            }      
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            DuzenliKayit();
+        }
 
         private void Button1_Click(object sender, EventArgs e)
         {
@@ -110,23 +133,25 @@ namespace MySqlYedekAlma
         {
             try
             {
-                dtn = DateTime.Now;
-                string str = dtn.ToString("dd-MM-yyyy");
-
-                string constring = string.Format(@"server={0}; user={1}; pwd={2}; database={3};", dbServer, kullaniciAdi, dbSifre, dbAdi);
-                string file = Properties.Settings.Default.dosyaYolu + "\\backup" + str + ".sql";
-                using (MySqlConnection conn = new MySqlConnection(constring))
+                for (int i = 0; i < cbDatabaseIsimleri.Items.Count; i++)
                 {
-                    using (MySqlCommand cmd = new MySqlCommand())
+                    dtn = DateTime.Now;
+                    string str = dtn.ToString("dd-MM-yyyy");                    
+                    string constring = string.Format(@"server={0}; user={1}; pwd={2}; database={3};", dbServer, kullaniciAdi, dbSifre, cbDatabaseIsimleri.Items[i].ToString());
+                    string file = Properties.Settings.Default.dosyaYolu + "\\"+ cbDatabaseIsimleri.Items[i].ToString() + "backup" + str + ".sql";
+                    using (MySqlConnection conn = new MySqlConnection(constring))
                     {
-                        using (MySqlBackup mb = new MySqlBackup(cmd))
+                        using (MySqlCommand cmd = new MySqlCommand())
                         {
-                            cmd.Connection = conn;
-                            conn.Open();
-                            mb.ExportInfo.AddCreateDatabase = true;
-                            mb.ExportInfo.ExportTableStructure = true;
-                            mb.ExportInfo.ExportRows = true;
-                            mb.ExportToFile(file);
+                            using (MySqlBackup mb = new MySqlBackup(cmd))
+                            {
+                                cmd.Connection = conn;
+                                conn.Open();
+                                mb.ExportInfo.AddCreateDatabase = true;
+                                mb.ExportInfo.ExportTableStructure = true;
+                                mb.ExportInfo.ExportRows = true;
+                                mb.ExportToFile(file);
+                            }
                         }
                     }
                 }
