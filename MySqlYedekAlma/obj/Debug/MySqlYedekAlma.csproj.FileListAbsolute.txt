@@ -12,3 +12,4 @@ C:\Users\kayas\source\repos\MySqlYedekAlma\MySqlYedekAlma\bin\Debug\MySqlBackup.
 C:\Users\kayas\source\repos\MySqlYedekAlma\MySqlYedekAlma\bin\Debug\Renci.SshNet.dll
 C:\Users\kayas\source\repos\MySqlYedekAlma\MySqlYedekAlma\obj\Debug\MySqlYedekAlma.Form1.resources
 C:\Users\kayas\source\repos\MySqlYedekAlma\MySqlYedekAlma\obj\Debug\MySqlYedekAlma.csproj.CopyComplete
+C:\Users\kayas\source\repos\MySqlYedekAlma\MySqlYedekAlma\obj\Debug\MySqlYedekAlma.csprojAssemblyReference.cache

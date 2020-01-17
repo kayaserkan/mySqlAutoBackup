@@ -50,6 +50,8 @@
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.cbDatabaseIsimleri = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.btnTumDbYedekAl = new System.Windows.Forms.Button();
+            this.btnSeciliDbYedekAl = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSaat)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownDakika)).BeginInit();
             this.SuspendLayout();
@@ -57,7 +59,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button1.Location = new System.Drawing.Point(316, 274);
+            this.button1.Location = new System.Drawing.Point(316, 266);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(277, 34);
             this.button1.TabIndex = 0;
@@ -150,7 +152,7 @@
             // btnBirSeferlikKayit
             // 
             this.btnBirSeferlikKayit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnBirSeferlikKayit.Location = new System.Drawing.Point(17, 274);
+            this.btnBirSeferlikKayit.Location = new System.Drawing.Point(17, 306);
             this.btnBirSeferlikKayit.Name = "btnBirSeferlikKayit";
             this.btnBirSeferlikKayit.Size = new System.Drawing.Size(277, 34);
             this.btnBirSeferlikKayit.TabIndex = 12;
@@ -246,11 +248,35 @@
             this.label7.TabIndex = 19;
             this.label7.Text = "Yedeklenecek DataBaseler";
             // 
+            // btnTumDbYedekAl
+            // 
+            this.btnTumDbYedekAl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnTumDbYedekAl.Location = new System.Drawing.Point(316, 306);
+            this.btnTumDbYedekAl.Name = "btnTumDbYedekAl";
+            this.btnTumDbYedekAl.Size = new System.Drawing.Size(277, 34);
+            this.btnTumDbYedekAl.TabIndex = 20;
+            this.btnTumDbYedekAl.Text = "TÜM DB YEDEK AL";
+            this.btnTumDbYedekAl.UseVisualStyleBackColor = true;
+            this.btnTumDbYedekAl.Click += new System.EventHandler(this.btnTumDbYedekAl_Click);
+            // 
+            // btnSeciliDbYedekAl
+            // 
+            this.btnSeciliDbYedekAl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnSeciliDbYedekAl.Location = new System.Drawing.Point(17, 266);
+            this.btnSeciliDbYedekAl.Name = "btnSeciliDbYedekAl";
+            this.btnSeciliDbYedekAl.Size = new System.Drawing.Size(277, 34);
+            this.btnSeciliDbYedekAl.TabIndex = 21;
+            this.btnSeciliDbYedekAl.Text = "SEÇİLİ DB YEDEK AL";
+            this.btnSeciliDbYedekAl.UseVisualStyleBackColor = true;
+            this.btnSeciliDbYedekAl.Click += new System.EventHandler(this.btnSeciliDbYedekAl_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(614, 319);
+            this.ClientSize = new System.Drawing.Size(614, 343);
+            this.Controls.Add(this.btnSeciliDbYedekAl);
+            this.Controls.Add(this.btnTumDbYedekAl);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.cbDatabaseIsimleri);
             this.Controls.Add(this.numericUpDownDakika);
@@ -304,6 +330,8 @@
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ComboBox cbDatabaseIsimleri;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button btnTumDbYedekAl;
+        private System.Windows.Forms.Button btnSeciliDbYedekAl;
     }
 }
 

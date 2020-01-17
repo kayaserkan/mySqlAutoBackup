@@ -70,9 +70,32 @@ namespace MySqlYedekAlma
             }      
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btnTumDbYedekAl_Click(object sender, EventArgs e)
         {
             DuzenliKayit();
+        }
+
+        private void btnSeciliDbYedekAl_Click(object sender, EventArgs e)
+        {
+            dtn = DateTime.Now;
+            string str = dtn.ToString("dd-MM-yyyy");
+            string constring = string.Format(@"server={0}; user={1}; pwd={2}; database={3};", dbServer, kullaniciAdi, dbSifre, cbDatabaseIsimleri.Text);
+            string file = Properties.Settings.Default.dosyaYolu + "\\" + cbDatabaseIsimleri.Text+ "backup" + str + ".sql";
+            using (MySqlConnection conn = new MySqlConnection(constring))
+            {
+                using (MySqlCommand cmd = new MySqlCommand())
+                {
+                    using (MySqlBackup mb = new MySqlBackup(cmd))
+                    {
+                        cmd.Connection = conn;
+                        conn.Open();
+                        mb.ExportInfo.AddCreateDatabase = true;
+                        mb.ExportInfo.ExportTableStructure = true;
+                        mb.ExportInfo.ExportRows = true;
+                        mb.ExportToFile(file);
+                    }
+                }
+            }
         }
 
         private void Button1_Click(object sender, EventArgs e)
